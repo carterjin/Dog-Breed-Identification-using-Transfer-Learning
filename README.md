@@ -25,3 +25,20 @@ The data for human recognition is also provided by Udacity: [human dataset](http
 - openCV
 - PIL
 
+### [Notebook](https://github.com/carterjin/Dog-Breed-Identification-using-Transfer-Learning/blob/master/Dog_Breed_Prediction.ipynb)
+This notebook provides the full analysis process and functional code for dog breed identification.
+
+### [Python Module](https://github.com/carterjin/Dog-Breed-Identification-using-Transfer-Learning/blob/master/dog_breed_predict.py)
+Using the model that I have trained you can import this python file see prediction results on your pictures.
+__How to use__:
+1. Download the model save files [1](https://github.com/carterjin/Dog-Breed-Identification-using-Transfer-Learning/blob/master/resnet50_dog_predict_model.part1.rar) [2](https://github.com/carterjin/Dog-Breed-Identification-using-Transfer-Learning/blob/master/resnet50_dog_predict_model.part2.rar) [3](https://github.com/carterjin/Dog-Breed-Identification-using-Transfer-Learning/blob/master/resnet50_dog_predict_model.part3.rar) [4](https://github.com/carterjin/Dog-Breed-Identification-using-Transfer-Learning/blob/master/resnet50_dog_predict_model.part4.rar) and extract them to the same directory as the python file.
+2. Download the [Haars Cascade face detection pretrained weight](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt.xml) and put it in a folder ```haarcascades``` under the same directory as the python file.
+3. Import and run as following:
+```
+from dog_breed_predict import DogBreedPredict
+
+pred = DogBreedPredict()
+pred.predict_breed('Your image file path')
+```
+You should be able to get a result like this:
+![](result_sample.png)
