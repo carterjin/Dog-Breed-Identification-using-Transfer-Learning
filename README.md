@@ -44,3 +44,7 @@ pred.predict_breed('Your image file path')
 You should be able to get a result like this:
 
 ![](result_sample.png)
+
+### Webapp
+
+The webapp implementation can be seen here, you can follow the installation instructions and try it out yourself!
