@@ -47,4 +47,8 @@ You should be able to get a result like this:
 
 ### Webapp
 
-The webapp implementation can be seen here, you can follow the installation instructions and try it out yourself!
+The webapp implementation is here:
+
+[https://github.com/carterjin/dog-breed-app](https://github.com/carterjin/dog-breed-app)
+
+you can follow the installation instructions and try it out yourself!
