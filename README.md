@@ -28,25 +28,25 @@ The data for human recognition is also provided by Udacity: [human dataset](http
 
 ## Summary of Analysis
 
-* 1. Read Dog Dataset and Preprocessing
+1. Read Dog Dataset and Preprocessing
 
 We download the data and preprocessed it to make it usable for the CNN models.
 
-* 2. Create a CNN to Classify Dog Breeds from Scratch
+2. Create a CNN to Classify Dog Breeds from Scratch
 
 We built a CNN from scratch, the CNN consist of 3 hidden layers and subsequent maxpooling layers, and a final Dense layer. The test accuracy for the trained model is 1.9%. It is not very accurate but better than random guess.
 
-* 3. Create a CNN to Classify Dog Breeds (using Transfer Learning)
+3. Create a CNN to Classify Dog Breeds (using Transfer Learning)
 
 We try two methods to make use of transfer learning. The first one is to use pre-trained model a feature extractor in model. The second one is extract bottleneck features first and use them to train the final layers. Either method the best model within VGG16, ResNet50, InceptionV3 is ResNet50, reaching 81.5% test accuracy.
 
-* 4. Detect Humans and Dogs
+4. Detect Humans and Dogs
 
 For human detection, we use OpenCV's implementation of Haar feature-based cascade classifier to detect human faces in images. 99% of human files are detected as human, and 11% of dog files are mistakenly detected as human.
 
 For dog detection, we again use ResNet50 model and imagenet pretrained weight to determine if predicted category is within all the dog categories. 100% of dog files are detected as dog, and 4% of human files are mistakenly detected as dogs.
 
-* 5. Wrap up and the Final Algorithm
+5. Wrap up and the Final Algorithm
 
 We pass an image sequentially though the dog detector and the human detector, and determine if the image is a dog, a human or neither. Then,
 
@@ -63,6 +63,7 @@ This notebook provides the full analysis process and functional code for dog bre
 Using this python model that I have trained you can import this python file see prediction results on your pictures.
 
 __How to use__:
+
 1. Download the [model save file] (https://github.com/carterjin/Dog-Breed-Identification-using-Transfer-Learning/blob/master/resnet50_dog_predict_model) and extract them to the same directory as the python file.
 2. Download the [Haars Cascade face detection pretrained weight](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt.xml) and put it in a folder ```haarcascades``` under the same directory as the python file.
 3. Import and run as following:
